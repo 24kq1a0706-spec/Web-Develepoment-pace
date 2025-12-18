@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dom Example</title>
+    <style>
+        #box {
+            width: 200px;
+            padding: 20px;
+            background-color: lightpink;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 id="heading">Welcome to DOM</h2>
+
+    <button onclick="changeContent()">Click Me</button>
+
+    <div id="box">This is a box</div>
+
+    <script>
+        function changeContent() {
+            // Accessing elements using DOM
+            document.getElementById("heading").innerHTML = "dom Updated!";
+
+            // Change styles
+            document.getElementById("box").style.backgroundColor = "lightgreen";
+            document.getElementById("box").style.color = "blue";
+            document.getElementById("box").innerHTML = "Content changed using DOM";
+        }
+    </script>
+
+</body>
+</html>
+
