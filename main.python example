@@ -1,0 +1,11 @@
+#function definition
+def encrypr(m,k1,k2):
+    return(((m*k2%5)**k1)%7000000001)
+#Driver code
+m,k1,k2=map(int,input().split())
+print(encrypr(m,k1,k2))
+
+
+output 
+4 5 1 
+result : 1024
